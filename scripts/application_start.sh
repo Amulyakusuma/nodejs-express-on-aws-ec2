@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #give permission for everything in the express-app directory
-sudo chmod -R 777 /home/ubuntu/express-app
+sudo chmod -R 777 /var/www/html/server
 
 #navigate into our working directory where we have all our github files
-cd /home/ubuntu/express-app
+cd //var/www/html/server
 
 #install node modules
 npm install
