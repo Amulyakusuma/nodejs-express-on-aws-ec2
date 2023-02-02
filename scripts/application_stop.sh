@@ -1,4 +1,4 @@
 #!/bin/bash
-#Stopping existing node servers
-echo "Stopping any existing node servers"
-pkill node
+
+service nginx stop
+service php8.0-fpm stop
