@@ -8,6 +8,3 @@ cd /home/ubuntu/test
 
 #install node modules
 npm install
-
-#start our node app in the background
-npm start node.js
