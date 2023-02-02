@@ -2,20 +2,21 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/test
-    owner: root
-    group: root
-    mode: 777
+    destination: /var/www/html/application
 hooks:
-  ApplicationStop:
-    - location: scripts/application_stop.sh
+  BeforeInstall:
+    - location: .github/deployment/scripts/BeforeInstall.sh
       timeout: 300
       runas: root
-  BeforeInstall:
-    - location: scripts/before_install.sh
+  AfterInstall:
+    - location: .github/deployment/scripts/AfterInstall.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/application_start.sh
+    - location: .github/deployment/scripts/ApplicationStart.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: .github/deployment/scripts/ApplicationStop.sh
       timeout: 300
       runas: root
