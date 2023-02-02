@@ -4,7 +4,7 @@
 sudo chmod -R 777 /home/ubuntu/test
 
 #navigate into our working directory where we have all our github files
-cd //var/www/html/server
+cd /home/ubuntu/test
 
 #install node modules
 npm install
