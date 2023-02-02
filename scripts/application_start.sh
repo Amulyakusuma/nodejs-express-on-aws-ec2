@@ -1,7 +1,4 @@
 #!/bin/bash
 
-#navigate into our working directory where we have all our github files
-cd /home/ubuntu/test
-
-#install node modules
-npm install
+service nginx restart
+service php8.0-fpm restart
